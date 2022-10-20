@@ -1,0 +1,11 @@
+@use '../abstracts/utils' as *;
+
+$almost-black: hsl(15, 100%, 0%);
+$bone: hsl(39, 34%, 75%);
+$xiketic: hsl(15, 100%, 4%);
+
+
+@mixin scheme {
+  @include defineColorHSL(--color__base, 39, 34%, 65%);
+  @include defineColorHSL(--color__base-bg, 15, 100%, 12%);
+}

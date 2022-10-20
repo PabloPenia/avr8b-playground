@@ -1,31 +1,50 @@
 {
-  "name": "arduino-simulator-js",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "dependencies": {
-    "@monaco-editor/react": "3.3.0",
-    "@wokwi/elements": "0.15.0",
-    "avr8js": "0.8.5",
-    "intel-hex": "0.1.2",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.0.1"
-  },
-  "devDependencies": {
-    "typescript": "3.8.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "8bavr-playground",
+	"version": "1.0.0",
+	"description": "Simulator for 8-bits AVR architecture.",
+	"license": "GPL-3.0-or-later",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"lint": "npx eslint src",
+		"lint:fix": "npm run lint -- --fix",
+		"prettier": "npx prettier src --check",
+		"prettier:fix": "npm run prettier -- --write",
+		"format": "npm run prettier:fix && npm run lint:fix",
+		"gen": "npx generate-react-cli component"
+	},
+	"engines": {
+		"node": "16.x"
+	},
+	"dependencies": {
+		"ace-builds": "^1.12.3",
+		"avr8js": "0.8.5",
+		"intel-hex": "0.1.2",
+		"react": "^18.2.0",
+		"react-ace": "^10.1.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.40.1",
+		"@typescript-eslint/parser": "^5.40.1",
+		"@vitejs/plugin-react": "^2.1.0",
+		"eslint": "^8.25.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.3.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-promise": "^6.1.0",
+		"eslint-plugin-react": "^7.31.10",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"generate-react-cli": "^7.4.0",
+		"prettier": "^2.7.1",
+		"sass": "^1.55.0",
+		"typescript": "^4.8.4",
+		"vite": "^3.1.8",
+		"vite-tsconfig-paths": "^3.5.1"
+	}
 }

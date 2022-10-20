@@ -1,0 +1,12 @@
+.led {
+	display: flex;
+	&__element {
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+	}
+	&__port {
+		display: block;
+		font-size: 1.4rem;
+	}
+}

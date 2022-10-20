@@ -1,0 +1,11 @@
+@use '../abstracts/utils';
+@use './colors';
+@use './fonts';
+:root, [data-theme="default"] {
+  @include colors.scheme;
+  // colors, backgrounds, shadows and gradients
+  //fonts
+  --font__base: #{fonts.$font__base};
+  --font__headings: #{fonts.$font__headings};
+  // --font__alt: #{fonts.$font__alt};
+}
