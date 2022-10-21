@@ -1,12 +1,13 @@
 import './theme/App.scss'
 import CodeEditor from './components/code-editor/code-editor.component'
-import Simulator from './components/Simulator/simulator.component'
+import Display from './components/display/display.component'
 
 function App() {
 	return (
 		<main>
+			<h1>AVR 8-Bits Simulator</h1>
 			<CodeEditor />
-			<Simulator />
+			<Display />
 		</main>
 	)
 }
